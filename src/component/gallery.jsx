@@ -4,6 +4,8 @@ import { IoSearch } from "react-icons/io5";
 import image from "../assets/image_29.jpg";
 import Portofolio from "../data/portofolio";
 import Stack from "./cardStack";
+
+import { MdArrowOutward } from "react-icons/md";
 const Gallery =()=> {
     return (
         <>
@@ -26,7 +28,16 @@ const Gallery =()=> {
                         />
             
                     <div className="card-description">
-                        <h3>{item.title}</h3>
+                        <h3 style={{display:'flex',alignItems:'center',gap:'15px'}}>{item.title} 
+
+                            {item.url &&
+                            
+                            <a target='_blank' rel='noopener noreferrer' href={item.url} >
+                                <MdArrowOutward style={{cursor:'pointer'}} size={15} />
+                            </a>
+                            }
+                            
+                        </h3>
 
                         <p>{item.description}</p>
                     </div>

@@ -56,8 +56,11 @@ const RoadMap =()=> {
                         <div className="roadmap-header">
                             <h3>{item.title}</h3>
                             <p>{item.startDate} - {item.endDate}</p>
-
                         </div>
+                        <div className="roadmap-position">
+                            <h5>{item.position}</h5>
+                        </div>
+                
                         <div className="roadmap-detail">
                         
                         <p>{item.description}</p>

@@ -66,7 +66,7 @@ const Portofolio = [
     {
         title:"Educhem Alchemy",
         stacks:["React"],
-        url:"https://ntctraining.id/NtcQuizz/#/home",
+        url:null,
         description:"Android-based game builded using unity as part of the final project for a multimedia development course.",
         img:[{id:1,img:educhem1}]
     },
@@ -82,7 +82,7 @@ const Portofolio = [
     {
         title:"NtcMeter",
         stacks:["React","Express","MySQL"],
-        url:"https://hitung-cepat.vercel.app/#/",
+        url:null,
         description:"web-based live polling application inspired by Mentimeter, tailored to align with the specific requirements and branding of the company.",
         img:[{id:1,img:ntcmeter},
             {id:2,img:ntcmeter1},

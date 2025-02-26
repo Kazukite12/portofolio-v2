@@ -34,12 +34,16 @@
     top: 0;
 }
 .roadmap-image {
-    width: 150px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     aspect-ratio: 1/1;
 }
 
 .roadmap-image img {
-    width: 100%;
+    height: 100%;
+    
 }
 
 .roadmap-header {
@@ -68,4 +72,57 @@
 .skill-icon {
     width: 45px;
     aspect-ratio: 1/1;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+   .intro {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .intro h1 {
+    text-align: left;
+   }
+
+   .skill-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+   }
+
+   .roadmap-container {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .roadmap-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+   }
+
+   .roadmap-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   }
+
+   .roadmap-header {
+    flex-direction: column;
+    align-items: start;
+   }
+
+   .roadmap-image {
+    width: 100px !important;
+   }
+
+   .roadmap-image img {
+    width: 100%;
+   }
 }

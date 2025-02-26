@@ -63,3 +63,20 @@
 .card-description p {
     color: grey;
 }
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .gallery-container {
+        width: 100%;
+        gap: 100px;
+    }
+    .gallery-card {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: start;
+        justify-content: center;
+    }
+}
