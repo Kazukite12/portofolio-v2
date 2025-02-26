@@ -53,7 +53,7 @@ const Portofolio = [
     {
         title:"Gredupedia",
         stacks:["React"],
-        url:"https://ntctraining.id/NtcQuizz/#/home",
+        url:"https://gredupedia.com",
         description:"Official website for the Gredupedia 5 Exhibition",
         img:[
             {id:1,img:gredupedia},
@@ -73,7 +73,7 @@ const Portofolio = [
     {
         title:"Hitung Cepat",
         stacks:["React"],
-        url:"https://ntctraining.id/NtcQuizz/#/home",
+        url:"https://hitung-cepat.vercel.app/#/",
         description:"Web-based math games as a personal project to evaluate calculating skills through gamification. ",
         img:[{id:1,img:hitung},
             {id:2,img:hitung2},
