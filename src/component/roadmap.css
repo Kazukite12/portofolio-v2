@@ -1,0 +1,71 @@
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.intro-img img {
+    width: 150px;
+    transform: rotateY(180deg);
+}
+.roadmap-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.roadmap-card {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 25px 0;
+    gap: 25px;
+}
+
+.roadmap-card:hover .roadmap-line {
+    background: white;
+}
+
+.roadmap-line {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: grey;
+    left: 0;
+    top: 0;
+}
+.roadmap-image {
+    width: 150px;
+    aspect-ratio: 1/1;
+}
+
+.roadmap-image img {
+    width: 100%;
+}
+
+.roadmap-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.roadmap-header h2{
+    width: 60%;
+
+}
+
+.skill-container {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-wrapper {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+}
+
+.skill-icon {
+    width: 45px;
+    aspect-ratio: 1/1;
+}

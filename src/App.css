@@ -1,0 +1,30 @@
+#main {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+#content {
+  width: 100%;
+  font-size: 1em;
+  padding: 10vh 200px 10vh 50px;
+  max-height: 85vh;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+#content p {
+  color: grey;
+}
+
+.dot{
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.05;
+  width: 100%;
+  background-image: linear-gradient(to right, white 1px, transparent 1px),
+    linear-gradient(to bottom, white 1px, transparent 1px);
+  background-size: 50px 50px;
+}

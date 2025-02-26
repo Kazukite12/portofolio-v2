@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --backgroundColor: #27005D;
+  --mainColor: #AED2FF;
+  --secondaryColor:#9400FF;
+  --thirdColor:#E4F1FF;
+}
+
+:root {
+  font-family: "JetBrains Mono", serif;
+  font-size: 1em;
+  line-height: 1.5;
+  overflow-y: hidden;
+  font-weight: 400;
+  background: black;
+
+  color-scheme: light dark;
+  color: var(--thirdColor);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}

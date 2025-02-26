@@ -1,0 +1,14 @@
+#sidebar {
+    padding: 50px;
+    font-size: 1em;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sidebar-container *{
+    cursor: pointer;
+}
