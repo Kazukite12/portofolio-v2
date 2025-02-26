@@ -13,7 +13,7 @@
     border-radius: 5px;
     border: 1px solid #fff;
     overflow: hidden;
-    width: 100% !important;
+    width: 100%;
   }
   
   .card-image {
@@ -25,4 +25,7 @@
 
 
   @media only screen and (max-width: 767px) {
+    .stack-container {
+      width: 100% !important;
+    }
   }
