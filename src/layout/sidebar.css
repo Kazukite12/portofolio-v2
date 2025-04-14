@@ -1,6 +1,7 @@
 #sidebar {
-    padding: 50px;
     font-size: 1em;
+    width: max-content;
+    height: max-content;
 }
 
 #sidebar a {
@@ -10,8 +11,34 @@
 }
 .sidebar-container {
     display: flex;
+    width: 100%;
+    padding: 25px;
+    height: 100vh;
     flex-direction: column;
     gap: 50px;
+    background: rgba( 71, 71, 71, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: relative;
+}
+
+.sidebar-footer {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    padding: 0 !important;
+    gap: 25px;
+    width: 100%;
+    border-top: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: auto; /* This pushes the footer to the bottom */
+    
+}
+
+.sidebar-footer * {
+    font-size: 1em;
+    margin-bottom: 15px;
 }
 
 .sidebar-container *{
@@ -28,9 +55,9 @@
 
 @media only screen and (max-width: 767px) {
     #sidebar {
-        padding: 50px 0 0 10px;
         font-size: 1em;
         align-items: center;
+        display: none;
     }
 
     .normal-logo {

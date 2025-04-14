@@ -1,14 +1,16 @@
 #main {
   min-height: 100vh;
+  gap: 100px;
   display: flex;
+  align-items: start;
+  justify-content: start;
   position: relative;
   z-index: 1;
 }
 #content {
-  width: 100%;
+  width: max-content;
+  height: 100vh;
   font-size: 1em;
-  padding: 10vh 200px 10vh 50px;
-  max-height: 85vh;
   overflow-y: auto;
   text-align: justify;
 }
@@ -25,7 +27,7 @@
   opacity: 0.05;
   width: 100%;
   background-image: linear-gradient(to right, white 1px, transparent 1px),
-    linear-gradient(to bottom, white 1px, transparent 1px);
+    linear-gradient(to bottom, white, transparent 1px);
   background-size: 50px 50px;
 }
 

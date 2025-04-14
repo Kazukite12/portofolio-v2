@@ -6,26 +6,22 @@ import RoadMap from "./component/roadmap";
 
 import "./App.css";
 import Particles from "./component/Particles";
+import { useState } from "react";
 
 
 function App() {
 
+  const [activeSection, setActiveSection] = useState("")
 
   return (
     <Router>
-    <div className='dot'></div>
     <main id='main'>
+      <div className="dot"></div>
   
-      <Sidebar />
+      <Sidebar setActiveSection={setActiveSection} />
       <div id="content">
         <Routes>
-          <Route path="/" element={<RoadMap />} />  {/* Default Page */}
-          <Route path="/drop" element={<Drop />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/about" element={<h2>About Section</h2>} />
-          <Route path="/mint" element={<h2>Minting Page</h2>} />
-          <Route path="/twitter" element={<h2>Twitter Feed</h2>} />
-          <Route path="/connect" element={<h2>Connect Wallet</h2>} />
+          <Route path="/" element={<RoadMap activeSection={activeSection} />} />  {/* Default Page */}
         </Routes>
       </div>
     </main>

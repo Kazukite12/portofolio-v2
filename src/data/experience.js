@@ -21,7 +21,7 @@ const Experience = [
         endDate:"May 2024",
     },
     {
-        img:ruangguru,
+
         title:"Ruangguru – MSIB 6 Studi Independen Kampus Merdeka",
         location:"Jakarta",
         position:"Subject : AI Integration In Backend Engineering of Application ",

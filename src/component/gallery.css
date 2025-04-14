@@ -1,82 +1,66 @@
-#gallery {
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    background: tan;
-    width: 100%;
-    max-height: 90vh;
-}
 
-.search-bar {
-    display: flex;
-    background: #1B1B1B;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
 
-.search-bar input {
-    background: none;
-    border: none;
-    width: 100%;
-    font-size: 20px;
-    font-family: "JetBrains Mono", serif;
-    height: 100%;
-    outline: none;
-}
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 80%;
+  padding: 30px;
+  gap: 30px;
 
-.gallery-container {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+background: rgba( 71, 71, 71, 0.25 );
+box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 0px 10px 10px 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .gallery-card {
-    font-size: 1rem;
-    width: 90%;
-    gap: 200px;
+    max-width: 270px;
+    height: auto;
+    padding: 30px;
+    gap: 15px;
     display: flex;
-    margin: 10px 0;
-    align-items: center;
-
-}
-
-.card-image {
-    width: 80%;
-    height: 200px;
-    aspect-ratio: 2/1;
-}
-
-.card-image img {
-    height: 100%;
-}
-
-.card-description {
-    display: flex;
-    width: 100%;
     flex-direction: column;
-    align-items: start;
+
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.card-description p {
-    color: grey;
+.gallery-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
 }
 
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover; /* Ensures image covers the area, cropping if needed */
+  object-position: center; /* Centers the image within the container */
+  display: block; 
+
+}
+
+.stack-wrapper {
+    display: flex; gap: 15px;
+    flex-wrap: wrap;
+}
+
+.stack-wrapper p {
+    background: #c71b52;
+    padding: 0 10px;
+    color: white !important;
+    border-radius: 5px;
+}
 
 
 @media only screen and (max-width: 767px) {
+    #gallery-container {
 
-    .gallery-container {
-        width: 100%;
-        gap: 100px;
-    }
-    .gallery-card {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        align-items: start;
-        justify-content: center;
+        grid-template-columns: repeat(1, auto);
     }
 }
