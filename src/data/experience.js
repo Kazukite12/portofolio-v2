@@ -29,6 +29,15 @@ const Experience = [
         startDate:"Nov 2023",
         endDate:"Dec 2024",
     },
+    {
+
+        title:"Gredupedia Exhibition",
+        location:"Yogyakarta",
+        position:"IT Lead",
+        description:"As the leader of the IT division, I spearheaded the development of educational materials and website media, designing the UI/UX, building, and deploying the official website. I successfully managed data documentation and entry for over 150 exhibition educational projects and drove engagement, attracting thousands of visitors during the offline event.",
+        startDate:"May 2024",
+        endDate:"Dec 2024",
+    },
 ]
 
 

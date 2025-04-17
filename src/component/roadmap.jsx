@@ -27,10 +27,19 @@ const RoadMap =({activeSection})=> {
         </div>
 
         </div>
-
-        
         <br></br>
-   
+        {/* <div id="intros">
+            <div className="intro-card">
+                <h4>Discuss</h4>
+            </div>
+            <div className="intro-card">
+                <h4>Develop</h4>
+            </div>
+            <div className="intro-card">
+            <h4>Deploy</h4>
+            </div>
+        </div> */}
+
         <h3 style={{border:activeSection == "skill" && '1px solid #c71b52'}}  className="section-title" >Technical Skills</h3>
         <div style={{border:activeSection == "skill" && '1px solid #c71b52'}}  id="skill-main-container">
         <div className="skill-container">
@@ -90,6 +99,23 @@ const RoadMap =({activeSection})=> {
          <br></br>
          <Gallery activeSection={activeSection}/>
          <br></br>
+
+
+         <div id="footer">
+            <div className="footer-contact">
+                 <h3>Contact me :</h3>
+                 <div className="contact-wrapper">
+                    <p>Email : akmal.abid52@gmail.com</p>
+                    <p>Whatsapp : +62 85155341765</p>
+                    <p>Instagram : @akmal.ng</p>
+                    <p>Twitter/X : akmal_abid47</p>
+                 </div>
+            </div>
+            <p className="watermark">Made with <span style={{color:'#c71b52'}}>love</span> by @akmal.ng</p>
+         </div>
+         <br></br>
+         
+    
         </>
     )
 }
