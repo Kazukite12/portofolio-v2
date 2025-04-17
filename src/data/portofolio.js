@@ -41,7 +41,7 @@ const Portofolio = [
     {
       title: "NtcQuizz",
       stacks: ["React", "Express", "Redis", "MySQL", "Docker"],
-      url: "https://ntctraining.id/NtcQuizz/#/home",
+      url: null,
       summary: "Corporate-branded interactive quiz platform",
       description: "Built a Kahoot-inspired quiz system with real-time polling, dynamic scoring, and adaptive questions. Implemented Redis for live updates and Docker for containerized deployment.",
       img: [
